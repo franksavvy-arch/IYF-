@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecom.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Include the Flag Icons CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="sidebar">
+        <div class="sidebar-contents">
+            <div class="first-contents">
+                <ul>
+                    <li><i class="ri-shopping-bag-line"></i></li>
+                    <li><i class="ri-apps-line"></i></li>
+                    <li><i class="ri-inbox-line"></i></li>
+                    <li><i class="ri-share-line"></i></li>
+                    <li><i class="ri-folder-line"></i></li>
+                    <li><i class="ri-download-line"></i></li>
+                </ul>
+            </div>
+            <div class="second-contents">
+                <ul>
+                    <li><i class="ri-notification-2-line"></i></li>
+                    <li><i class="ri-settings-2-line"></i></li>
+                    <li><i class="ri-headphone-line"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="main-content">
+        <div class="navbar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <i class="ri-search-line search-icon"></i>
+                <i class="ri-mic-line mic-icon"></i>
+            </div>
+            <div class="navbar-logo">
+                <ul class="navbar-items">
+                    <li class="nav-item">
+                        <a href="#overview"><i class="ri-calendar-2-line"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#platform-view"><i class="ri-upload-line"></i> Export</a>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="Profile.jfif">
+                </div>
+            </div>
+        </div>
+        <h1>Overview</h1>
+        <div class="analytics-parent-container">
+            <!-- Overview Container -->
+            <div class="container overview">
+                <div class="metric">
+                    <p>Product viewed</p>
+                    <h3>411.9K</h3>
+                    <span class="growth">2.9% ↑</span>
+                </div>
+            </div>
+            <div class="container platform">
+                <div class="metric">
+                    <p>Product shared</p>
+                    <h3>230.4K</h3>
+                    <span class="growth">13.3% ↑</span>
+                </div>
+            </div>
+            <div class="container revenue">
+                <div class="metric">
+                    <p>Product added to cart</p>
+                    <h3>20.9K</h3>
+                    <span class="growth">4.3% ↓</span>
+                </div>
+            </div>
+            <div class="container products">
+                <div class="metric">
+                    <p>Product checked out</p>
+                    <h3>410.54K</h3>
+                    <span class="growth">30.2% ↑</span>
+                </div>
+            </div>
+            <div class="container orders">
+                <div class="metric">
+                    <p>Product re-ordered</p>
+                    <h3>200K</h3>
+                    <span class="growth">1.5% ↓</span>
+                </div>
+            </div>
+
+            <!-- Platform View Container -->
+            <div class="container top-platform">
+                <h2 style="margin-left: 40%; font-size: 1.5em;">Platform view</h2>
+                <div class="chart" style="margin-top: -10px;">
+                    <div class="bar">
+                        <p>Shopee</p>
+                        <h3>200.9K</h3>
+                        <span class="growth">12.9% ↓</span>
+                    </div>
+                    <div class="bar">
+                        <p>Tokopedia</p>
+                        <h3>90.12K</h3>
+                        <span class="growth">80.9% ↑</span>
+                    </div>
+                    <div class="bar">
+                        <p>Amazon</p>
+                        <h3>65.74K</h3>
+                        <span class="growth">71.66% ↑</span>
+                    </div>
+                    <div class="bar">
+                        <p>Lazada</p>
+                        <h3>55.12K</h3>
+                        <span class="growth">10.9% ↓</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Revenue Container -->
+            <div class="container best-seller">
+                <h2 style="font-size: 1.5em;">Your Top Platform</h2>
+                <div id="company-logo"></div> <!-- Placeholder for the company logo -->
+                <p id="product-name">Product best seller:</p>
+                <p id="product-stats"></p>
+            </div>
+
+            <!-- Product Container -->
+            <div class="container top-country">
+                <h2 style="font-size: 1em; margin-left: 12%;">Most users by country</h2>
+                
+                <!-- Displaying the flag, name, and orders dynamically -->
+                <div class="country-info" id="country-flag">
+                    <span class="flag-icon flag-icon-id"></span> <!-- Placeholder for first flag -->
+                </div>
+                <p id="country-name" style="font-size: 0.8em;">Indonesia</p> <!-- Placeholder for first country name -->
+                <p id="country-orders" style="font-size: 0.8em;">190k orders</p> <!-- Placeholder for first country orders -->
+            </div>
+
+            <!-- Graph Container -->
+            <div class="container graph">
+                <div class="chart"></div> <!-- Placeholder for graph -->
+            </div>
+
+            <!-- Summary Container -->
+            <div class="container summary">
+                <h2 style="font-size: 1em; margin-left: 30%;">Summary</h2>
+                <p style="font-size: 0.8em;">Revenue increased by 19.4% this week</p>
+                <p style="font-size: 0.8em;">Expected gross profit: $1.9b</p>
+                <p style="font-size: 0.8em;">Actual gross profit: $800.27M</p>
+            </div>
+        </div>
+        <script src="ecom.js"></script>
+    </section>
+</body>
+</html>
